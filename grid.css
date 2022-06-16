@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+background-color: rgb(32, 30, 30);
+place-items: center;
+height: 100vh;
+width: 800px;
+margin:auto;
+margin-top: 5rem;
+}
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 0px;
+	padding-left: 65%;
+	padding-right: 8%;
+    padding-bottom: 70px;
+}
+header ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 25px;
+}
+header ul li a{
+	color: white;
+	text-decoration: none;
+    font-size: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+header ul li a:hover{
+	color: hsl(31, 77%, 52%);
+	transition: .4s;
+}
+main{
+display: grid; 
+grid-template-areas: 
+'a a b'
+'c d d'
+'c e e'
+;
+gap: 15px;
+}
+main div{
+    padding: 2em;
+    text-align: center;
+}
+.item-a{
+    background-color: hsl(22, 96%, 55%);
+    grid-area: a;
+    height: 100px;
+}
+.item-b{
+    background-color: rgb(252, 248, 16);
+    grid-area: b;
+    height: 100px;
+}
+.item-c{
+    background-color: rgb(6, 141, 6);
+    grid-area: c;
+    height: 130px;
+}
+.item-d{
+    background-color: rgb(72, 72, 247);
+    grid-area: d;
+    height: 25px;
+}
+.item-e{
+    background-color: rgb(72, 72, 247);
+    grid-area: e;
+    height: 25px;
+}
